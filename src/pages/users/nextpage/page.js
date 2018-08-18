@@ -1,8 +1,9 @@
+
 import React from "react";
 export default () => {
   return (
     <div>
-      内容
+      <h2>hello world</h2>
     </div>
   )
 }
