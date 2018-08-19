@@ -35,29 +35,29 @@ export default class MenuLeft extends React.Component{
           <Menu.Item key="11">Option 11</Menu.Item>
           <Menu.Item key="12">Option 12</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>生产技术工</span></span>}>
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
+        <SubMenu key="sub5" title={<span><Icon type="setting" /><span>生产技术工</span></span>}>
+          <Menu.Item key="09">Option 9</Menu.Item>
+          <Menu.Item key="010">Option 10</Menu.Item>
+          <Menu.Item key="011">Option 11</Menu.Item>
+          <Menu.Item key="012">Option 12</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>家政酒店管理</span></span>}>
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
+        <SubMenu key="sub6" title={<span><Icon type="setting" /><span>家政酒店管理</span></span>}>
+          <Menu.Item key="009">Option 9</Menu.Item>
+          <Menu.Item key="0010">Option 10</Menu.Item>
+          <Menu.Item key="0011">Option 11</Menu.Item>
+          <Menu.Item key="0012">Option 12</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
+        <SubMenu key="sub7" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
+          <Menu.Item key="0009">Option 9</Menu.Item>
+          <Menu.Item key="00010">Option 10</Menu.Item>
+          <Menu.Item key="00011">Option 11</Menu.Item>
+          <Menu.Item key="00012">Option 12</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
+        <SubMenu key="sub8" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
+          <Menu.Item key="00009">Option 9</Menu.Item>
+          <Menu.Item key="000010">Option 10</Menu.Item>
+          <Menu.Item key="000011">Option 11</Menu.Item>
+          <Menu.Item key="000012">Option 12</Menu.Item>
         </SubMenu>
 
       </Menu>

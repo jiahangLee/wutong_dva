@@ -7,10 +7,18 @@ import Icon from "antd/es/icon/index";
 import 'antd/dist/antd.css';
 import NormalLoginForm from "./NormalLoginForm";
 import SearchBar from "./SearchBar";
-
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
-export default class HeaderHome extends React.Component {
+ export default class HeaderHome extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      current: ["mail"],
+      hasLogined: false,
+      userName: '',
+      visible: false,
+    }
+  }
 
   handleCancel = (e) => {
     console.log(e);
@@ -32,18 +40,10 @@ export default class HeaderHome extends React.Component {
       });
     }
   }
-
-  constructor() {
-    super()
-    this.state = {
-      current: 'mail',
-      hasLogined: false,
-      userName: '',
-      visible: false
-    }
-  }
-
   render() {
+    const menuTop = this.props.marginTop
+    console.log("--------"+menuTop);
+    console.log(this.props.menu)
     const userShow = this.state.hasLogined
       ?
       <Menu.Item key="logout">
@@ -112,8 +112,8 @@ export default class HeaderHome extends React.Component {
               <Menu.Item key="alipay2">
                 <a href="https://ant.design" target="_blank" rel="noopener noreferrer">出国留学</a>
               </Menu.Item>
-              <Menu.Item key="alipay2">
-                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">中东</a>
+              <Menu.Item key="alipay3">
+                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">123123</a>
               </Menu.Item>
               {userShow}
             </Menu>
@@ -139,3 +139,4 @@ export default class HeaderHome extends React.Component {
     )
   }
 }
+
