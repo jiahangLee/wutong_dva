@@ -10,9 +10,9 @@ export default class Top extends React.Component {
         <Col span={4} className={style["top-span"]}></Col>
         <Col span={1} className={style["top-span"]}>首页</Col>
               <Col span={1} className={style["top-span"]}>热点</Col>
-              <Col span={2} className={style["top-span"]}>关于出国你该知道</Col>
-        <Col span={2} className={style["top-span"]}>大家都在看</Col>
-        <Col span={10} className={style["top-span"]}></Col>
+              <Col span={3} className={style["top-span"]}>关于出国你该知道</Col>
+        <Col span={3} className={style["top-span"]}>大家都在看</Col>
+        <Col span={8} className={style["top-span"]}></Col>
         <Col span={4} className={style["top-span"]}>联系我们：400-100-8888</Col>
 
               </Row>

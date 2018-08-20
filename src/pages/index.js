@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import styles from './index.css';
-import Content from "../constlayouts/home/Content";
+import Content from "../components/home/Content";
 import home from "../models/home";
 
 function IndexPage() {

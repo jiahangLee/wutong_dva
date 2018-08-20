@@ -1,4 +1,5 @@
 import {Row, Col, Button, Modal} from 'antd';
+import { Tag } from 'antd';
 import React from 'react'
 import styles from '../Const.css'
 import Menu from "antd/es/menu/index";
@@ -78,7 +79,12 @@ var Link = Router.Link;
             <Col span={3}></Col>
             <Col className={styles.searchsize} span={18}>
             <SearchBar style={{width:"80%"}}/>
-            <span className={styles.searchbartop}>  &nbsp;&nbsp;韩国雇佣制 &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;免费出国打工 &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;最新出国方案 &nbsp;&nbsp;| &nbsp;&nbsp;德国工业职工</span>
+            <span className={styles.searchbartop}>
+              <Tag color="#f50">#韩国雇佣制</Tag>
+            <Tag color="#2db7f5">#免费出国打工</Tag>
+            <Tag color="#87d068">#最新出国方案</Tag>
+            <Tag color="#108ee9">#最新出国方案</Tag>
+            </span>
             </Col>
 
             <Col span={3}></Col>

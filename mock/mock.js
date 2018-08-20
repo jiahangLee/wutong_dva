@@ -15,7 +15,7 @@ module.exports = {
 
   },
   'GET /api/shop/cart': mockjs.mock({
-    'data|4': [{
+    'data|3': [{
       name: Random.ctitle(3),
       'id|1-100': 1,
       'count|1-10': 1,

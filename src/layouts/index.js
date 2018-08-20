@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './index.css';
-import HeaderHome from '../constlayouts/home/HeaderHome';
-import HeaderOtherAll from '../constlayouts/common/HeaderOtherAll';
-import Footer from '../constlayouts/common/Footer'
+import HeaderHome from '../components/home/HeaderHome';
+import HeaderOtherAll from '../components/common/HeaderOtherAll';
+import Footer from '../components/common/Footer'
 import withRouter from 'umi/withRouter';
-import Content from "../constlayouts/home/Content";
-import Top from "../constlayouts/common/Top";
+import Content from "../components/home/Content";
+import Top from "../components/common/Top";
 function Layout({ children, location }) {
   return (
     location.pathname === '/' ?
