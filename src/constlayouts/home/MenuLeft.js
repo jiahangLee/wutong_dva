@@ -1,16 +1,17 @@
-import { Menu, Icon } from 'antd';
+import {Menu, Icon, Row,Col} from 'antd';
 import React from 'react'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 export default class MenuLeft extends React.Component{
 
-  handleClick(e) {
-    console.log('click', e);
-  }
+
   render(){
     return(
       <div>
-      <Menu onClick={this.handleClick} style={{ width: 266,marginLeft:30,marginTop:0 }} mode="vertical">
+        <Row>
+          <Col span={4}/>
+          <Col span={18}>
+      <Menu onClick={this.handleClick} mode="vertical">
         <SubMenu key="sub1" title={<span><Icon type="mail" /><span>招聘国家大全</span></span>}>
           <MenuItemGroup title="Item 1">
             <Menu.Item key="1">Option 1</Menu.Item>
@@ -59,8 +60,9 @@ export default class MenuLeft extends React.Component{
           <Menu.Item key="000011">Option 11</Menu.Item>
           <Menu.Item key="000012">Option 12</Menu.Item>
         </SubMenu>
-
       </Menu>
+          </Col>
+        </Row>
       </div>
     )
   }

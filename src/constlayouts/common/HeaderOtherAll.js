@@ -1,15 +1,8 @@
-import {Row, Col, Tabs, Button, Modal} from 'antd';
-import {Link} from 'react-router';
+import {Row, Col} from 'antd';
 import React from 'react'
 import styles from '../Const.css'
-import Menu from "antd/es/menu/index";
-import Icon from "antd/es/icon/index";
 import 'antd/dist/antd.css';
-import NormalLoginForm from "../home/NormalLoginForm";
-import SearchBar from "../home/SearchBar";
 
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 export default class HeaderOtherAll extends React.Component {
 
   handleCancel = e => {

@@ -15,8 +15,8 @@ module.exports = {
 
   },
   'GET /api/shop/cart': mockjs.mock({
-    'data|8': [{
-      name: Random.ctitle(2,4),
+    'data|4': [{
+      name: Random.ctitle(3),
       'id|1-100': 1,
       'count|1-10': 1,
       'cover': Random.image('64x64', '#00405d', '#FFF', 'image'),

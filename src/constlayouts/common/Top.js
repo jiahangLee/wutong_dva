@@ -1,6 +1,6 @@
 import React from  'react'
 import style from '../Const.css'
-import {Row, Col, Tabs, Button, Modal} from 'antd';
+import {Row, Col} from 'antd';
 
 export default class Top extends React.Component {
   render(){

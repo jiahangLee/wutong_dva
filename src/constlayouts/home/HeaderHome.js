@@ -1,15 +1,17 @@
-import {Row, Col, Tabs, Button, Modal, Card} from 'antd';
-import {Link} from 'react-router';
+import {Row, Col, Button, Modal} from 'antd';
 import React from 'react'
 import styles from '../Const.css'
 import Menu from "antd/es/menu/index";
 import Icon from "antd/es/icon/index";
 import 'antd/dist/antd.css';
+import { connect } from 'dva';
 import NormalLoginForm from "./NormalLoginForm";
 import SearchBar from "./SearchBar";
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
- export default class HeaderHome extends React.Component {
+var Router = require('react-router');
+var Link = Router.Link;
+ class HeaderHome extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -41,9 +43,10 @@ const MenuItemGroup = Menu.ItemGroup;
     }
   }
   render() {
-    const menuTop = this.props.marginTop
-    console.log("--------"+menuTop);
-    console.log(this.props.menu)
+    const menuTop =  this.props.home.menuTop;
+    // console.log("*******类型********"+(typeof menuTop))
+    // console.log("*******"+(typeof JSON.stringify(menuTop)));
+    // console.log("---"+ menuTop.data[0].name);
     const userShow = this.state.hasLogined
       ?
       <Menu.Item key="logout">
@@ -65,7 +68,8 @@ const MenuItemGroup = Menu.ItemGroup;
         <Row className={styles.searchbar_input}>
           <Col span={6}>
             <a href="/" className={styles.logo}>
-              <img src={require('../../assets/logo.svg')} className={styles.images} alt="logo"/>
+              <Col span={2}/>
+              <img src={require('../../assets/logo.svg')} className={styles.images} style={{fontSize: "100%"}} alt="logo"/>
               <span className={styles.span}>亚马逊跨境电商</span>
             </a>
           </Col>
@@ -73,7 +77,7 @@ const MenuItemGroup = Menu.ItemGroup;
 
             <Col span={3}></Col>
             <Col className={styles.searchsize} span={18}>
-            <SearchBar className={styles.searchsize}/>
+            <SearchBar style={{width:"80%"}}/>
             <span className={styles.searchbartop}>  &nbsp;&nbsp;韩国雇佣制 &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;免费出国打工 &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;最新出国方案 &nbsp;&nbsp;| &nbsp;&nbsp;德国工业职工</span>
             </Col>
 
@@ -85,7 +89,8 @@ const MenuItemGroup = Menu.ItemGroup;
         </Row>
         <Row>
           <Col span={6}>
-            <Button style={{marginLeft:"30px",width:"250px",marginTop:"15px"}} type="primary">出国劳务招工信息</Button>
+            <Col span={6}/>
+            <Button style={{}} type="primary">出国劳务招工信息</Button>
           </Col>
           <Col span={12}>
             <Menu
@@ -106,15 +111,16 @@ const MenuItemGroup = Menu.ItemGroup;
                   <Menu.Item key="setting:4">Option 4</Menu.Item>
                 </MenuItemGroup>
               </SubMenu>
-              <Menu.Item key="alipay">
-                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">德国护理</a>
-              </Menu.Item>
-              <Menu.Item key="alipay2">
-                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">出国留学</a>
-              </Menu.Item>
-              <Menu.Item key="alipay3">
-                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">123123</a>
-              </Menu.Item>
+              {
+                menuTop.data.map((x,index)=>{
+                  return(
+                    <Menu.Item key={index}>
+                      <a href="https://ant.design" target="_blank" rel="noopener noreferrer">{x.name}</a>
+                    </Menu.Item>
+                )
+              })
+              }
+
               {userShow}
             </Menu>
             <Modal
@@ -139,4 +145,5 @@ const MenuItemGroup = Menu.ItemGroup;
     )
   }
 }
+export default connect(({home}) => ({home}))(HeaderHome)
 
