@@ -61,7 +61,7 @@ var Link = Router.Link;
       </Menu.Item>
       :
       <Menu.Item key="register">
-        <Icon type="appstpre"/>注册/登录
+        <Icon type="appstpre"/>登录/注册
       </Menu.Item>
     return (
 

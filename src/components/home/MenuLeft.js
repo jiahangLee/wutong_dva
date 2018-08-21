@@ -10,7 +10,7 @@ export default class MenuLeft extends React.Component{
       <div>
         <Row>
           <Col span={4}/>
-          <Col span={18}>
+          <Col span={18} style={{height:"100px"}}>
       <Menu onClick={this.handleClick} mode="vertical">
         <SubMenu key="sub1" title={<span><Icon type="mail" /><span>招聘国家大全</span></span>}>
           <MenuItemGroup title="Item 1">
@@ -54,12 +54,7 @@ export default class MenuLeft extends React.Component{
           <Menu.Item key="00011">Option 11</Menu.Item>
           <Menu.Item key="00012">Option 12</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub8" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
-          <Menu.Item key="00009">Option 9</Menu.Item>
-          <Menu.Item key="000010">Option 10</Menu.Item>
-          <Menu.Item key="000011">Option 11</Menu.Item>
-          <Menu.Item key="000012">Option 12</Menu.Item>
-        </SubMenu>
+
 
 
       </Menu>

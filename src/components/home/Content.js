@@ -27,7 +27,7 @@ callback(key) {
   </div>
       <Row >
         <Col span={6}>
-          <MenuLeft/>
+          <MenuLeft style={{height:"100%"}}/>
         </Col>
         <Col span={12}>
           <div style={{marginTop: 1}}>
@@ -36,16 +36,16 @@ callback(key) {
         </Col>
         <Col span={6}>
           <Col span={2}/>
-          <Col span={18}>
+          <Col span={22}>
           <ImgCard />
           <AffixRight/>
           </Col>
-          <Col span={4}/>
+          <Col span={0}/>
         </Col>
       </Row>
   <Row>
     <Col span={1}/>
-    <Col span={17} style={{marginTop:"-9rem",height:"40%"}}>
+    <Col span={17} style={{marginTop:"-140px",height:"300"}}>
       <CardTitle/>
     </Col>
     <Col span={6}/>
@@ -58,11 +58,11 @@ callback(key) {
     </Col>
     <Col span={11} style={{marginTop:10,marginLeft:10}}>
       <Tabs onChange={this.callback} type="card">
-        <TabPane tab="日本工作排行" key="1">
+        <TabPane tab="日本排行" key="1">
           <ListViewRight/>
         </TabPane>
-        <TabPane tab="德国工作排行" key="2">Content of Tab Pane 2</TabPane>
-        <TabPane tab="韩国工作排行" key="3">
+        <TabPane tab="德国排行" key="2">Content of Tab Pane 2</TabPane>
+        <TabPane tab="韩国排行" key="3">
           <ListViewRight/>
         </TabPane>
       </Tabs>

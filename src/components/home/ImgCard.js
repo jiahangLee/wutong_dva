@@ -7,7 +7,7 @@ class ImgCard extends React.Component {
     return (
       <Card
         hoverable
-        cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>}
+        cover={<img style={{height:310}} alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>}
       >
         <Meta
           title="免费出游国外"

@@ -23,8 +23,6 @@ class CardTitle extends React.Component{
           <Tag color="purple">purple</Tag>
           <Tag color="blue">blue</Tag>
           <Tag color="purple">purple</Tag>
-          <Tag color="red">red</Tag>
-          <Tag color="volcano">volcano</Tag>
         </Card.Grid>
         <Card.Grid style={gridStyle}>
           <p>Card content</p>
