@@ -22,7 +22,6 @@ class CardTitle extends React.Component{
           <Tag color="geekblue">geekblue</Tag>
           <Tag color="purple">purple</Tag>
           <Tag color="blue">blue</Tag>
-          <Tag color="geekblue">geekblue</Tag>
           <Tag color="purple">purple</Tag>
           <Tag color="red">red</Tag>
           <Tag color="volcano">volcano</Tag>

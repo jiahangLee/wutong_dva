@@ -45,7 +45,7 @@ callback(key) {
       </Row>
   <Row>
     <Col span={1}/>
-    <Col span={17} style={{marginTop:-140,height:"40%"}}>
+    <Col span={17} style={{marginTop:"-9rem",height:"40%"}}>
       <CardTitle/>
     </Col>
     <Col span={6}/>
@@ -53,10 +53,10 @@ callback(key) {
   <Row>
     <Col span={1}/>
 
-    <Col span={11} style={{marginTop:20}}>
+    <Col span={11} style={{marginTop:10}}>
       <ListView/>
     </Col>
-    <Col span={11} style={{marginTop:20,marginLeft:10}}>
+    <Col span={11} style={{marginTop:10,marginLeft:10}}>
       <Tabs onChange={this.callback} type="card">
         <TabPane tab="日本工作排行" key="1">
           <ListViewRight/>

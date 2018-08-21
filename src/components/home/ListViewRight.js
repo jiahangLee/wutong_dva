@@ -11,7 +11,7 @@ class ListViewRight extends React.Component{
   render(){
     return(
       <div>
-        <h3 style={{ marginBottom: 16 }}>最热</h3>
+        <h3 style={{ marginBottom: 16 }}>&nbsp;&nbsp;&nbsp;&nbsp;最热</h3>
         <List
           header={<div>Header</div>}
           footer={<div>Footer</div>}
@@ -19,7 +19,7 @@ class ListViewRight extends React.Component{
           dataSource={data}
           renderItem={item => (<List.Item>{item}</List.Item>)}
         />
-        <h3 style={{ margin: '16px 0' }}>最新</h3>
+        <h3 style={{ margin: '16px 0' }}>&nbsp;&nbsp;&nbsp;&nbsp;最新</h3>
         <List
           size="small"
           header={<div>Header</div>}
@@ -28,7 +28,7 @@ class ListViewRight extends React.Component{
           dataSource={data}
           renderItem={item => (<List.Item>{item}</List.Item>)}
         />
-        <h3 style={{ margin: '16px 0' }}>高薪</h3>
+        <h3 style={{ margin: '16px 0' }}>&nbsp;&nbsp;&nbsp;&nbsp;高薪</h3>
         <List
           size="large"
           header={<div>Header</div>}
