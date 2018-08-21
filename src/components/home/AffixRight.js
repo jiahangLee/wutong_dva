@@ -4,12 +4,12 @@ import TabsRight from "./TabsRight";
 
 class AffixRight extends React.Component {
   state = {
-    bottom: 100,
+    bottom: 120,
   }
 
   render() {
     return (
-      <Affix offsetBottom={this.state.bottom}>
+      <Affix offsetTop={this.state.bottom} style={{ position: 'absolute', top: 0, right: 0,width:"100%"}}>
           <TabsRight/>
       </Affix>
     );

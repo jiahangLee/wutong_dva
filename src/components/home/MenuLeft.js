@@ -60,12 +60,7 @@ export default class MenuLeft extends React.Component{
           <Menu.Item key="000011">Option 11</Menu.Item>
           <Menu.Item key="000012">Option 12</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub8" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
-          <Menu.Item key="00009">Option 9</Menu.Item>
-          <Menu.Item key="000010">Option 10</Menu.Item>
-          <Menu.Item key="000011">Option 11</Menu.Item>
-          <Menu.Item key="000012">Option 12</Menu.Item>
-        </SubMenu>
+
 
       </Menu>
           </Col>

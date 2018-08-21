@@ -70,15 +70,15 @@ var Link = Router.Link;
           <Col span={6}>
             <a href="/" className={styles.logo}>
               <Col span={2}/>
-              <img src={require('../../assets/logo.svg')} className={styles.images} style={{fontSize: "100%"}} alt="logo"/>
-              <span className={styles.span}>亚马逊跨境电商</span>
+              <img src={require('../../assets/logo.svg')} className={styles.images}  alt="logo"/>
+              <span className={styles.span}>宝船跨境电商</span>
             </a>
           </Col>
           <Col span={12} className={styles.searchbar}>
 
             <Col span={3}></Col>
             <Col className={styles.searchsize} span={18}>
-            <SearchBar style={{width:"80%"}}/>
+            <SearchBar />
             <span className={styles.searchbartop}>
               <Tag color="#f50">#韩国雇佣制</Tag>
             <Tag color="#2db7f5">#免费出国打工</Tag>
