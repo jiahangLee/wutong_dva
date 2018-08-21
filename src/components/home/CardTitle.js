@@ -1,4 +1,4 @@
-import {Card, Tab, Tag} from 'antd';
+import {Card, Tag} from 'antd';
 import React from "react"
 const gridStyle = {
   width: '25%',

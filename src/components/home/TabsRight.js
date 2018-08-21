@@ -1,7 +1,6 @@
-import {Tabs, Select, Button} from 'antd';
+import {Tabs, Button} from 'antd';
 import React from "react"
 const TabPane = Tabs.TabPane;
-const Option = Select.Option;
 
 
 class TabsRight extends React.Component {

@@ -1,4 +1,4 @@
-import { Affix, Button } from 'antd';
+import { Affix } from 'antd';
 import React from "react";
 import TabsRight from "./TabsRight";
 

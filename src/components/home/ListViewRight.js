@@ -1,6 +1,5 @@
 import { List } from 'antd';
 import React from "react"
-import { Rate } from 'antd';
 const data = [
   'Racing car sprays burning fuel into crowd.',
   'Japanese princess to wed commoner.',

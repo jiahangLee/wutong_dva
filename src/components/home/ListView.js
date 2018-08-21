@@ -21,7 +21,7 @@ const IconText = ({ type, text }) => (
 class ListView extends React.Component{
   render(){
     return(
-      <div style={{paddingLeft:20,backgroundColor:"#fff" }}><Button type="primary">相关社区</Button>
+      <div style={{paddingLeft:20,backgroundColor:"#fff" }}><Button type="primary" style={{marginTop:"20px"}}>相关社区</Button>
         &nbsp;&nbsp;<Rate disabled defaultValue={5} />
       <List
         itemLayout="vertical"
@@ -30,7 +30,7 @@ class ListView extends React.Component{
           onChange: (page) => {
             console.log(page);
           },
-          pageSize: 3,
+          pageSize: 4,
         }}
         dataSource={listData}
         footer={<div><b>ant design</b> footer part</div>}

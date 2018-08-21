@@ -1,4 +1,4 @@
-import {Row, Col} from 'antd';
+import {Row, Col, BackTop} from 'antd';
 import React from 'react'
 import styles from '../Const.css'
 import 'antd/dist/antd.css';
@@ -19,6 +19,12 @@ callback(key) {
   render() {
     return (
 <div className={styles.background}>
+  <div>
+    <BackTop>
+      <div className={styles["ant-back-top-inner"]}>UP</div>
+    </BackTop>
+
+  </div>
       <Row >
         <Col span={6}>
           <MenuLeft/>
