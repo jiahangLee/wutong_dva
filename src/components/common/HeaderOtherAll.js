@@ -1,7 +1,7 @@
 import {Row, Col} from 'antd';
 import React from 'react'
 import styles from '../Const.css'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 
 export default class HeaderOtherAll extends React.Component {
 

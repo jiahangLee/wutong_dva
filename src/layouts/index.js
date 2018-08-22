@@ -7,8 +7,9 @@ import withRouter from 'umi/withRouter';
 import Content from "../components/home/Content";
 import Top from "../components/common/Top";
 function Layout({ children, location }) {
+  console.log("--------****"+location.pathname)
   return (
-    location.pathname === '/' ?
+    (location.pathname === '/' || location.pathname === '/dist/') ?
         <div className={styles.normal}>
           <Top/>
           <HeaderHome location={location} />

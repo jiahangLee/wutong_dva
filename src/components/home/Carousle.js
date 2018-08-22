@@ -1,6 +1,6 @@
 import { Carousel } from 'antd';
 import React from 'react'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 import style from '../Const.css'
 export default class Carousle extends React.Component{
   render(){

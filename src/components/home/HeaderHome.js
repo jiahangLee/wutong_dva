@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '../Const.css'
 import Menu from "antd/es/menu/index";
 import Icon from "antd/es/icon/index";
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 import { connect } from 'dva';
 import NormalLoginForm from "./NormalLoginForm";
 import SearchBar from "./SearchBar";

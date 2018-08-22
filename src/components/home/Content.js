@@ -1,7 +1,7 @@
 import {Row, Col, BackTop} from 'antd';
 import React from 'react'
 import styles from '../Const.css'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 import Carousle from "./Carousle";
 import MenuLeft from "./MenuLeft";
 import AffixRight from "./AffixRight";
