@@ -1,5 +1,5 @@
 export default {
-  "publicPath": "/dist/static/",
+  "publicPath": "/static/",
   "proxy": {
     "/api": {
       "target": "http://jsonplaceholder.typicode.com/",

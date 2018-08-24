@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'dva';
 import styles from './index.css';
 import Content from "../components/home/Content";
-import home from "../models/home";
 
 function IndexPage() {
   return (
@@ -15,4 +14,4 @@ function IndexPage() {
 IndexPage.propTypes = {
 };
 
-export default connect(home)(IndexPage);
+export default connect(({home})=>({home}))(IndexPage);
