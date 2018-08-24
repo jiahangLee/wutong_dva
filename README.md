@@ -3,11 +3,11 @@
 #### google密码
 
 *  lijiahangfox@gmail.com  
-* 13832352036
+* 138****2036
 
 #### :bowtie:  表情
 
-* :smirk: :blush: :grin: 
+* :smirk::blush::grin: 
 
 #### git
 
